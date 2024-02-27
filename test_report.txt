@@ -12,29 +12,17 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 PASS src/objects.test.ts
-  ● Console
-
-    console.log
-      []
-
-      at mergeQuestion (src/objects.ts:155:13)
-
-    console.log
-      [ 'square', 'triangle', 'circle' ]
-
-      at mergeQuestion (src/objects.ts:155:13)
-
 PASS src/arrays.test.ts
 PASS src/nested.test.ts
 PASS src/functions.test.ts
 PASS src/text.test.tsx
-PASS src/HtmlCss.test.tsx
 PASS src/App.test.tsx
+PASS src/HtmlCss.test.tsx
 ----------------|---------|----------|---------|---------|-------------------
 File            | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------------|---------|----------|---------|---------|-------------------
-All files       |   97.67 |     93.1 |     100 |   97.63 |                   
- src            |   97.67 |     93.1 |     100 |   97.63 |                   
+All files       |   97.66 |     93.1 |     100 |   97.61 |                   
+ src            |   97.66 |     93.1 |     100 |   97.61 |                   
   App.tsx       |     100 |      100 |     100 |     100 |                   
   arrays.ts     |     100 |      100 |     100 |     100 |                   
   functions.ts  |     100 |      100 |     100 |     100 |                   
@@ -48,5 +36,5 @@ All files       |   97.67 |     93.1 |     100 |   97.63 |
 Test Suites: 7 passed, 7 total
 Tests:       49 passed, 49 total
 Snapshots:   0 total
-Time:        4.079 s
+Time:        4.165 s
 Ran all test suites.
