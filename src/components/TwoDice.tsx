@@ -11,6 +11,17 @@ export function d6(): number {
     return 1 + Math.floor(Math.random() * 6);
 }
 
+export function evaluate(diceOne: number, diceTwo: number): string {
+    if (diceOne === diceTwo) {
+        if (diceOne === 1) {
+            return "Lose";
+        } else {
+            return "Win";
+        }
+    }
+    return "";
+}
+
 export function TwoDice(): JSX.Element {
     const [diceOne, setDiceOne] = useState<number>(1);
     const [diceTwo, setDiceTwo] = useState<number>(6);
@@ -24,15 +35,7 @@ export function TwoDice(): JSX.Element {
                 Value:{diceTwo}
                 <Button onClick={() => setDiceTwo(d6())}>Roll Right</Button>
             </span>
-            {diceOne === diceTwo ? (
-                diceOne === 1 ? (
-                    <span> Lose </span>
-                ) : (
-                    <span> Win </span>
-                )
-            ) : (
-                <span></span>
-            )}
+            <span>{evaluate(diceOne, diceTwo)}</span>
         </div>
     );
 }
